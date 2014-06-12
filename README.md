@@ -14,7 +14,7 @@ User Stories: <br>
 7. Stick figure images are created for selecting total amount split. When the total amount split spills over
     to more stick figures than shown, 10x stick figures are used to show the count. <br> <br>
 
-Walkthrough of the advanced tip calculator: <br>
+Walkthrough of the advanced tip calculator: <br> <br>
 ![Video Walkthrough](TippingPointDemo.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
