@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
@@ -68,6 +69,14 @@ public class MainActivity extends Activity {
 		sbTipPercent = (SeekBar) findViewById(R.id.sbTipPercent);
 		
 		tvTipAmount = (TextView) findViewById(R.id.lblTipAmount);
+		
+		
+		Typeface font1 = Typeface.createFromAsset(getAssets(), "fonts/6216.ttf");
+		lblTotalAmount.setTypeface(font1);
+		tvTotalSplitWays.setTypeface(font1);
+		tvTipSplitWays.setTypeface(font1);
+		tvTipPercent.setTypeface(font1);
+		tvTipAmount.setTypeface(font1);
 		
 		try 
 		{
