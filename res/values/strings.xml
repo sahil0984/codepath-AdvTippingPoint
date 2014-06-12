@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tipping Point</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tip10p_button_label">10%</string>
+    <string name="tip15p_button_label">15%</string>
+    <string name="tip20p_button_label">20%</string>
+    <string name="total_amount_tv_hint">$</string>
+    <string name="tip_amount_label">Tip is:</string>
+    <string name="total_amount_label">Total Amount: $</string>
+    <string name="split_between_label">Split amount</string>
+    <string name="split_tip_between_label">Split tip</string>
+    <string name="tip_percent_label">Tip Percentage</string>
+    <string name="inc_splitways_button_desc">Increments the splitways count</string>
+    <string name="dec_splitways_button_desc">Decrements the splitways count</string>
+
+</resources>

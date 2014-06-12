@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/etTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/total_amount_tv_hint"
+        android:inputType="numberDecimal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lblTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/total_amount_label" />
+
+    <TextView
+        android:id="@+id/lblSplitBetween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etTotalAmount"
+        android:text="@string/split_between_label" />
+
+    <SeekBar
+        android:id="@+id/sbSplitTipBetween"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblSplitTipBetween"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/lblTipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sbSplitTipBetween"
+        android:layout_marginTop="22dp"
+        android:text="@string/tip_percent_label" />
+
+    <TextView
+        android:id="@+id/lblSplitTipBetween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/split_tip_between_label" />
+
+    <TableLayout
+        android:id="@+id/tableSplitBetweenButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sbSplitTipBetween"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblSplitBetween"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/ibIncSplitWays"
+        android:stretchColumns="*" >
+
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/ibIncSplitWays"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblSplitBetween"
+        android:contentDescription="@string/inc_splitways_button_desc"
+        android:onClick="onIncSplitWays"
+        android:background="@android:color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/plus" />
+
+    <ImageButton
+        android:id="@+id/ibDecSplitWays"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tableSplitBetweenButtons"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/dec_splitways_button_desc"
+        android:onClick="onDecSplitWays"
+        android:background="@android:color/white"
+        android:scaleType="center"
+        android:src="@drawable/minus" />
+
+    <SeekBar
+        android:id="@+id/sbTipPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblTipPercent"
+        android:layout_toRightOf="@+id/lblTipPercent"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/lblTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/tip_amount_label"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
